@@ -586,42 +586,42 @@ Tutte le schermate sotto riportate sono state catturate direttamente dal framebu
 ### 8.1 Dashboard Pre-Flight (Schermata Principale di Cockpit Check)
 La plancia di decollo dell'allenamento. A sinistra la diagnostica in tempo reale dei sensori (Fascia CooSpo H6 ECG con lettura carica batteria e verifica contatto elettrodi a 1 Hz, sensore volano Schwinn 700IC e Readiness Score con ore di sonno e HRV) disposta con allineamento compatto in alto. A destra il selettore dei 4 protocolli e in basso la barra rapida degli allarmi vocali attivi e il CTA di avvio.
 
-![Dashboard Pre-Flight](docs/images/01_preflight_dashboard.png)
+![Dashboard Pre-Flight](01_preflight_dashboard.png)
 
 ---
 
 ### 8.2 Drawer di Check-In Biometrico & Calibrazione Nutrizione
 Accessibile in qualsiasi momento toccando il badge atleta. Permette di regolare il peso odierno con stepper rapidi ($\pm 0.1\text{ / }0.5\text{ kg}$), verificare l'HRV e la FC a riposo mattutina da Apple Watch, selezionare il timing dell'ultimo pasto e visualizzare i grammi di carboidrati e calorie registrati su Yazio con calcolo del serbatoio glicogeno iniziale.
 
-![Drawer Check-In Nutrizione](docs/images/02_checkin_drawer.png)
+![Drawer Check-In Nutrizione](02_checkin_drawer.png)
 
 ---
 
 ### 8.3 Modale Configurazione Profilo Atleta & Soglie Cardio Cliniche
 Pannello per la personalizzazione dei parametri anagrafici, soglie delle 5 zone cardio (Z1 Recupero, Z2 Base Alpinismo, Z3 Sweetspot, Z4 Soglia, Z5 VO2max) e calibrazione meccanica del volano Schwinn (rapporto 1:4.80, sviluppo metrico 6.20 m/giro, filtro debounce a 25 ms).
 
-![Profilo Atleta & Zone Cardio](docs/images/03_athlete_profile_modal.png)
+![Profilo Atleta & Zone Cardio](03_athlete_profile_modal.png)
 
 ---
 
 ### 8.4 Modale Impostazione Obiettivo Dinamico
 Consente di impostare una sessione a traguardo libero selezionando tra Calorie attive ($400\text{–}1200\text{ kcal}$), Distanza chilometrica ($20\text{–}100\text{ km}$) o Minuti di pedalata, con chiusura rapida al tocco sullo sfondo.
 
-![Obiettivo Dinamico](docs/images/04_custom_goal_modal.png)
+![Obiettivo Dinamico](04_custom_goal_modal.png)
 
 ---
 
 ### 8.5 Storico Sessioni di Allenamento
 Registro cronologico delle attività salvate nella memoria interna del dispositivo, con durata effettiva, dislivello simulato, calorie consumate, frequenza cardiaca media e stima VO2max aggiornata.
 
-![Storico Sessioni](docs/images/05_workout_history_modal.png)
+![Storico Sessioni](05_workout_history_modal.png)
 
 ---
 
 ### 8.6 Modale Sincronizzazione Wi-Fi Apple Health & Yazio da iPhone
 Il modale genera dinamicamente il QR Code con l'IP locale del micro-server HTTP (`http://192.168.1.X:8080/checkin`). Inquadrando il codice con la fotocamera di iPhone si apre la web-app che invia i dati notturni di Apple Watch e i pasti di Yazio senza alcun passaggio su cloud.
 
-![Sync Apple Health da iPhone](docs/images/06_apple_health_sync_modal.png)
+![Sync Apple Health da iPhone](06_apple_health_sync_modal.png)
 
 ---
 
@@ -633,28 +633,28 @@ La plancia operativa durante la pedalata. Layout Bento Grid a 3 colonne ottimizz
 - **Destra**: Cadenza con target essenziale `(60-68 RPM)` e 4 card orizzontali senza sottotitoli per Distanza (`21.8 km`), VAM Alpinistica (`+750 m/h`), Potenza Stimata (`235 W • 3.15 W/kg`) e Kcal Attive (`482 kcal • 42g CHO`).
 - **In basso**: Timeline di avanzamento sessione multi-segmento.
 
-![Bento Live HUD Cockpit](docs/images/07_cockpit_live_hud.png)
+![Bento Live HUD Cockpit](07_cockpit_live_hud.png)
 
 ---
 
 ### 8.8 Report Post-Flight & Test Clinico HRR a 60 Secondi
 Schermata di sintesi generata al termine dell'allenamento, estesa a tutta altezza senza barra superiore. In alto campeggia il banner del **Test Clinico HRR** che quantifica la caduta dei battiti nei 60 secondi successivi allo sforzo ($-34\text{ BPM}$, Recupero Eccellente con attivazione parasimpatica ottimale) e il VO2max stimato EWMA ($54.8\text{ ml/kg/min}$). In basso, le 3 colonne con bilancio energetico, depletamento substrati e statistiche cliniche.
 
-![Report Post-Flight & HRR](docs/images/08_postflight_report.png)
+![Report Post-Flight & HRR](08_postflight_report.png)
 
 ---
 
 ### 8.9 Modale Condivisione Social & Download Attività (QR Code Semplificato)
 Il modale semplificato ad alto contrasto centrato sul **QR Code ad alta risoluzione ($196 \times 196\text{ px}$)**: l'atleta inquadra il codice da fotocamera iPhone per accedere all'endpoint web locale `/export`, visualizzare l'anteprima e scaricare con un tocco lo Sticker Instagram 9:16 RGBA trasparente e i file `.FIT` (Strava) e `.TCX`.
 
-![Social Export & File FIT](docs/images/09_social_export_qr_modal.png)
+![Social Export & File FIT](09_social_export_qr_modal.png)
 
 ---
 
 ### 8.10 Simulatore Allarmi Intelligenti & Assistente Vocale
 Pannello diagnostico per testare in cuffia il sintetizzatore vocale italiano nativo Android e simulare l'attivazione degli allarmi di reintegrazione gel glucidico, allarme termico di deriva cardiaca (+6%) e promemoria posturale fuorisella.
 
-![Simulatore Allarmi Vocali](docs/images/10_alarm_simulator_modal.png)
+![Simulatore Allarmi Vocali](10_alarm_simulator_modal.png)
 
 ---
 
